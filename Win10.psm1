@@ -522,7 +522,7 @@ Function DisableWAPPush {
 
 # Enable and start Device Management Wireless Application Protocol (WAP) Push Service
 Function EnableWAPPush {
-	Write-Output "Enabling and starting Device Management WAP Push Service..."
+	Write-Output "Enabling and starting Device Management Wireless Application Protocol (WAP) Push Service"
 	Set-Service "dmwappushservice" -StartupType Automatic
 	Start-Service "dmwappushservice" -WarningAction SilentlyContinue
 	Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\dmwappushservice" -Name "DelayedAutoStart" -Type DWord -Value 1
@@ -3240,18 +3240,18 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "Microsoft.MinecraftUWP" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MixedReality.Portal" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.MoCamera" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.MSPaint" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.NetworkSpeedTest" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.OfficeLens" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
+	#Get-AppxPackage "Microsoft.Office.OneNote" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Office.Sway" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.OneConnect" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.People" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Print3D" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Reader" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.RemoteDesktop" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Todos" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.SkypeApp" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.Todos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Wallet" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WebMediaExtensions" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Whiteboard" | Remove-AppxPackage
@@ -3260,14 +3260,14 @@ Function UninstallMsftBloat {
 	Get-AppxPackage "microsoft.windowscommunicationsapps" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsFeedbackHub" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsMaps" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.WindowsPhone" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.Windows.Photos" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsReadingList" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsScan" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WindowsSoundRecorder" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WinJS.1.0" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.WinJS.2.0" | Remove-AppxPackage
-	Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
+	# Get-AppxPackage "Microsoft.YourPhone" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneMusic" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.ZuneVideo" | Remove-AppxPackage
 	Get-AppxPackage "Microsoft.Advertising.Xaml" | Remove-AppxPackage # Dependency for microsoft.windowscommunicationsapps, Microsoft.BingWeather
