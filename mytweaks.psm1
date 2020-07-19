@@ -16,9 +16,9 @@ Function InstallChocolatey {
 }
 
 Function InstallNeovim {
-    # Install neovim
-    choco install neovim -y
-    
+    # Install neovim (pre was needed since 0.4.3 had a bug, not printing eg $ on altgr+4)
+    choco install neovim --pre -y
+
     # Install vim-plug
     md ~\AppData\Local\nvim-data\site\autoload
     $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -28,8 +28,11 @@ Function InstallNeovim {
             "~\AppData\Local\nvim-data\site\autoload\plug.vim"
         )
     )
-    
-    # TODO: Symlink nvim configfile from dotfiles repo
+
+    # Symlink nvim configfile from win10 dotfiles repo
+    Start-Process -FilePath "$env:comspec" -ArgumentList "/k", "mklink",
+	"`"C:\Users\oyvind\AppData\Local\nvim\init.vim`"",
+	"`"C:\Users\oyvind\dotfiles\win10\configfiles\nvim\init.vim`""
 }
 
 Function InstallStuff {
