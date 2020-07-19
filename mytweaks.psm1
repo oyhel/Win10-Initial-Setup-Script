@@ -15,6 +15,23 @@ Function InstallChocolatey {
     Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 }
 
+Function InstallNeovim {
+    # Install neovim
+    choco install neovim -y
+    
+    # Install vim-plug
+    md ~\AppData\Local\nvim-data\site\autoload
+    $uri = 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    (New-Object Net.WebClient).DownloadFile(
+        $uri,
+        $ExecutionContext.SessionState.Path.GetUnresolvedProviderPathFromPSPath(
+            "~\AppData\Local\nvim-data\site\autoload\plug.vim"
+        )
+    )
+    
+    # TODO: Symlink nvim configfile from dotfiles repo
+}
+
 Function InstallStuff {
     winget install Postman.Postman
 }
