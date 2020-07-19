@@ -9,3 +9,7 @@ Function SetKeyboardDefault {
     Set-ItemProperty -Path "HKCU:\Control Panel\Keyboard" -Name "KeyboardDelay" -Type String -Value 1
     Set-ItemProperty -Path "HKCU:\Control Panel\Keyboard" -Name "KeyboardSpeed" -Type String -Value 25
 }
+
+Function InstallStuff {
+    winget install Postman.Postman
+}
