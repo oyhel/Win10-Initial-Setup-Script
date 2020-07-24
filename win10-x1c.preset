@@ -124,7 +124,7 @@ DisableAutoRebootOnCrash      # EnableAutoRebootOnCrash
 # DisableLockScreen               # EnableLockScreen
 # DisableLockScreenRS1          # EnableLockScreenRS1
 HideNetworkFromLockScreen       # ShowNetworkOnLockScreen
-H# ideShutdownFromLockScreen      # ShowShutdownOnLockScreen
+# HideShutdownFromLockScreen      # ShowShutdownOnLockScreen
 # DisableLockScreenBlur           # EnableLockScreenBlur
 # DisableAeroShake              # EnableAeroShake
 DisableAccessibilityKeys        # EnableAccessibilityKeys
@@ -150,7 +150,7 @@ DisableShortcutInName           # EnableShortcutInName
 # EnableTitleBarColor           # DisableTitleBarColor
 # SetAppsDarkMode               # SetAppsLightMode
 # SetSystemLightMode            # SetSystemDarkMode
-RemoveENKeyboard              # AddENKeyboard                 
+RemoveENKeyboard              # AddENKeyboard
 EnableNumlock                 # DisableNumlock
 # DisableEnhPointerPrecision    # EnableEnhPointerPrecision
 # SetSoundSchemeNone            # SetSoundSchemeDefault
@@ -176,7 +176,7 @@ EnableNavPaneExpand             # DisableNavPaneExpand
 HideSelectCheckboxes          # ShowSelectCheckboxes
 HideSyncNotifications           # ShowSyncNotifications
 HideRecentShortcuts             # ShowRecentShortcuts
-SetExplorerThisPC               # SetExplorerQuickAccess
+# SetExplorerThisPC               # SetExplorerQuickAccess
 # HideQuickAccess                 # ShowQuickAccess
 # HideRecycleBinFromDesktop     # ShowRecycleBinOnDesktop
 ShowThisPCOnDesktop             # HideThisPCFromDesktop
