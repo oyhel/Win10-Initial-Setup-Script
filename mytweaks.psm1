@@ -163,6 +163,7 @@ Function InstallStuff {
     choco install syncthing
     choco install signal
     choco install synctrayzor # syncthing tray tool
+    choco install shutup10 -y
     # winget install SSHFS-Win.SSHFS-Win # not sure about this, seems to be broken in chocolatey
     # SSHFS-win also requires WinFSP:  winget install WinFsp.WinFsp
 
