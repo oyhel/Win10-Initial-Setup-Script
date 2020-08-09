@@ -128,6 +128,7 @@ Function InstallStuff {
     # N
     choco install nextcloud-client -y
     choco install nodejs -y
+    choco install notepadplusplus -y
 
     # O
     choco install openvpn -y                            # ok
