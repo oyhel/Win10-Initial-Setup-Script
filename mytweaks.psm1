@@ -185,6 +185,7 @@ Function InstallStuff {
     choco install vlc -y
     choco install vcredist140 -y                        # visual c++ redistr
     choco install ventoy -y
+    choco install vcxsrv -y				# X-server client
 
     # W
     choco install winrar -y                             # ok 
