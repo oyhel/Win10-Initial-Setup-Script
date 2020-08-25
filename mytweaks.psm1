@@ -76,6 +76,7 @@ Function InstallStuff {
     choco install docker-kitematic -y
     choco install drawio -y
     choco install directx -y                            # ok
+    choco install dotnetcore-runtime -y			# needed for powertoys
 
     # E
     choco install etcher -y                             # ok
