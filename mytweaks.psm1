@@ -150,6 +150,7 @@ Function InstallStuff {
     choco install retroarch -y                          # ok
     choco install r -y                                  # ok
     choco install r.studio -y                           # ok - install r packages as well?
+    choco install rtools -y
 
 
     # S
