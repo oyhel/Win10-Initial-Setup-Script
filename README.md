@@ -1,3 +1,6 @@
+## TODOs
+ - Enable hibernation in start menu settings
+
 ## Contents
  - [Description](#description)
  - [Usage](#usage)
